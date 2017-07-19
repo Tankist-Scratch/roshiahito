@@ -1,4 +1,4 @@
-#from tankist-scratch.github.io/python/scripts/NameSpace.py
+#from //tankist-scratch.github.io/python/scripts/NameSpace.py
 #author = tankist-scratch
 
 
