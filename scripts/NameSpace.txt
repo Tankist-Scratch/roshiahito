@@ -1,3 +1,7 @@
+#from tankist-scratch.github.io/python/scripts/NameSpace.py
+#author = tankist-scratch
+
+
 class NameSpace:
     def __init__(self):
         pass
