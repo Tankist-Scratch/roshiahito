@@ -1,6 +1,6 @@
 import data, templates as templ, os
 
-site = "ex"
+site = "/roshiahito"
 
 def head():
     return ""
@@ -166,7 +166,10 @@ page.write(write("<table width='100%'>" + "".join(["""<tr bgcolor="#aaa">
 page.close()
 
 for nmpg in data.pages.keys():
-    os.mkdir("wiki/" + nmpg)
+    try:
+        os.mkdir("wiki/" + nmpg)
+    except:
+        pass
     page = open("wiki/%s/index.html" % nmpg, "w", encoding="utf-8")
     page.write(write(data.pages[nmpg], True, nmpg))
     page.close()
