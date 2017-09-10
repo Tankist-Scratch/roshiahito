@@ -80,7 +80,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[t]":
             if s[i] == "]":
-                o += "<a href='%s/wiki/%s'>%s</a>" % (site, _s[-2], _s[-1])
+                o += "<a href='%s/wiki/%s' title='%s'>%s</a>" % (site, _s[-2], _s[-2], _s[-1])
                 t = ""
                 i += 1
                 _s.pop()

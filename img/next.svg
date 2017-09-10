@@ -14,7 +14,7 @@
    viewBox="0 0 26.458333 26.458334"
    version="1.1"
    id="svg37"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="next.svg">
   <defs
      id="defs31" />
@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="117.67842"
+     inkscape:cx="-19.82158"
      inkscape:cy="182.60482"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1280"
-     inkscape:window-height="725"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata34">
@@ -54,17 +54,15 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-270.54165)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30.03656769px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="-3.9305665"
-       y="190.4561"
-       id="text41"
-       transform="scale(0.63746408,1.5687158)"><tspan
-         sodipodi:role="line"
-         id="tspan39"
-         x="-3.9305665"
-         y="190.4561"
-         style="stroke-width:0.26458332">&gt;&gt;</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path2287"
+       style="font-style:normal;font-weight:normal;font-size:medium;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       d="m 1.8019368e-8,274.93529 v -4.39361 L 11.314071,281.76714 v 4.00738 L 1.8019368e-8,297.00001 v -4.39364 L 9.0900879,283.79498 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path2289"
+       style="font-style:normal;font-weight:normal;font-size:medium;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       d="m 15.144263,274.93529 v -4.39361 l 11.314071,11.22546 v 4.00738 l -11.314071,11.22549 v -4.39364 l 9.090088,-8.81139 z" />
   </g>
 </svg>
