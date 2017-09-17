@@ -158,9 +158,9 @@ page.write(write(data.main, True, "Главная"))
 page.close()
 
 page = open("wiki/all/index.html", "w", encoding="utf-8")
-page.write(write("<table width='100%'>" + "".join(["""<tr bgcolor="#aaa">
-      <td>{{tree|%s}}</td>
-      </tr>""" % i for i in data.all]) + "</table>", True, "Все создания"))
+page.write(write("".join(["""
+      {{tree|%s}}
+      """ % i for i in data.all]), True, "Все создания"))
 page.close()
 
 for nmpg in data.pages.keys():
