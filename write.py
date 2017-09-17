@@ -1,7 +1,5 @@
 import data, templates as templ, os
 
-site = "/roshiahito"
-
 def head():
     return ""
 
@@ -43,7 +41,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[i]":
             if s[i] == "]":
-                o += "<img src='%s/img/%s'/>" % (site, _s[-1])
+                o += "<img src='img/%s'/>" % ( _s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -80,7 +78,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[t]":
             if s[i] == "]":
-                o += "<a href='%s/wiki/%s' title='%s'>%s</a>" % (site, _s[-2], _s[-2], _s[-1])
+                o += "<a href='wiki/%s' title='%s'>%s</a>" % (_s[-2], _s[-2], _s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -161,7 +159,7 @@ page.close()
 
 page = open("wiki/all/index.html", "w", encoding="utf-8")
 page.write(write("<table width='100%'>" + "".join(["""<tr bgcolor="#aaa">
-      <td>{{robolink|%s}}</td><td width='50px'><img src="/roshiahito/img/next.svg" width="50px"></td>
+      <td>{{tree|%s}}</td>
       </tr>""" % i for i in data.all]) + "</table>", True, "Все создания"))
 page.close()
 
