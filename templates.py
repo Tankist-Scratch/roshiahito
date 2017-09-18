@@ -25,27 +25,12 @@ def model(ldd, sf):
 </div>"""
 
 def tree(name):
-    o = ""
     try:
-        all = {"VD" : [[["r", "VD I (b)", "VD I"]]], "VD I" : [[["c", "VD I (a)", "VD I#VD I (a)"]], [["a", "v"]], [["c", "VD I (b)", "VD I#VD I (b)"]]]}
-        all = all[name]
-        o += "<table>"
-        for x in range(len(all)):
-            o += "<tr>"
-            for y in range(len(all[x])):
-                if len(all[x][y]) > 0:
-                    o += "<td %s style='border:%s solid #000'>" % ("bgcolor='#aaf'" if all[x][y][0] == "r" else "", "2px" if all[x][y][0] == "r" else ("1px" if all[x][y][0] == "c" else "0px"))
-                    o += ("<a href='wiki/%s'>%s<img src='img/tree/%s.png wigth='50' height='50'></a>" % (all[x][y][2], all[x][y][1], all[x][y][1])) if all[x][y][0] in {"r", "c"} else {"v" : "<img src='img/tree/arrows/v' heidth='100%' style='min-height:50px'>"}[all[x][y][1]]
-                    o += "</td>"
-                else:
-                    o += "<td></td>"
-            o += "</tr>"
-        o += "</table>"
+        pass
 
                         
     except KeyError:
         pass
-    return o
 all = {"robolink": robolink, "Card" : card, "tree" : tree}
 
 conv = {"robolink": True, "Card": True, "tree" : False}

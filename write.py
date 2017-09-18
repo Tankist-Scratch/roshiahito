@@ -157,11 +157,11 @@ page = open("wiki/index.html", "w", encoding="utf-8")
 page.write(write(data.main, True, "Главная"))
 page.close()
 
-page = open("wiki/all/index.html", "w", encoding="utf-8")
-page.write(write("".join(["""
-      {{tree|%s}}
-      """ % i for i in data.all]), True, "Все создания"))
-page.close()
+# page = open("wiki/all/index.html", "w", encoding="utf-8")
+# page.write(write("".join(["""
+#       {{tree|%s}}
+#       """ % i for i in data.all]), True, "Все создания"))
+# page.close()
 
 for nmpg in data.pages.keys():
     try:
