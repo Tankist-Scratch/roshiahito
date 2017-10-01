@@ -10,7 +10,7 @@ def card(name, img, type, prev, next, width, lenth, height, mass, model=""):
     \t<tr><td>%s</td></tr></table>
     </tr><tr><td>Ширина : %s см, Длина : %s, см Высота : %s, см Вес : %s кг</td></tr></table>
     <br>
-    """ % ("{{robolink|" + "}} {{robolink|".join(prev) + "}}", name, "{{robolink|" + "}} {{robolink|".join(next) + "}}",
+    """ % ("{{robolink|" + prev + "}}", name, "{{robolink|" + next + "}}",
            width, lenth, height, mass)
     return o
 
