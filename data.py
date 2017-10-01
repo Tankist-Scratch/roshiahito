@@ -3,7 +3,7 @@ header = """<img src='/roshiahito/logo.png' width='200px'><br>
  • <a href='/roshiahito/tree/'>Все создания</a><br>
 <hr>"""
 
-struct = ["<!DOCTYPE html><html lang='ru'><head><base href='/roshiahito'>", "\n</head><body bgcolor='#dfe'>\n<table width='100%' bgcolor='#dfe'><tr><td width='200px' rowspan='2' style='background-color:#fff'>\n", "\n<td rowspan='2'></td></td><td abgcolor='#fff'><h1>\n", "\n<br></h1></td></tr>\n<tr><td bgcolor='#fff'>", "</td></tr></table>\n</body></html>"]
+struct = ["<!DOCTYPE html><html lang='ru'><head>", "\n</head><body bgcolor='#dfe'>\n<table width='100%' bgcolor='#dfe'><tr><td width='200px' rowspan='2' style='background-color:#fff'>\n", "\n<td rowspan='2'></td></td><td abgcolor='#fff'><h1>\n", "\n<br></h1></td></tr>\n<tr><td bgcolor='#fff'>", "</td></tr></table>\n</body></html>"]
 
 main = """"""
 
