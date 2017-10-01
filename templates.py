@@ -2,10 +2,10 @@ def robolink(link):
     return "[[@robots/%s/logo.svg]][[%s|%s]]" % (link, link, link)
 
 
-def card(name, img, prev, next, width, lenth, height, mass, model=""):
+def card(name, img, type, prev, next, width, lenth, height, mass, model=""):
     o = """<table bgcolor='#8cc' width='100""" + "%" + (""""'>
-    <tr><td rowspan='2' width='300px'>%s</td><td><img src='/roshiahito/img/%s/icon.svg'/> %s</td><td rowspan='2'>
-    \t<table width='100""" % (("<img src='/roshiahito/img/%s/%s' width='300px'/>" % s(name, img)) if img else "", name, name)) + "%" + """'><tr><td>%s</td></tr>
+    <tr><td rowspan='2' width='300px'>%s</td><td><table width="100%s"><tr><td><img src='/roshiahito/img/%s/icon.svg'/>%s</td><td style="text-align:right; color:#666;">%s</td></tr></table></td><td rowspan='2'>
+    \t<table width='100""" % (("<img src='/roshiahito/img/%s/%s' width='300px'/>" % (name, img)) if img else "", "%", name, name, {"L":"Lego Mindstorms", "mB":"MakeBlock"}[type])) + "%" + """'><tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr></table>
     </tr><tr><td>Ширина : %s см, Длина : %s, см Высота : %s, см Вес : %s кг</td></tr></table>

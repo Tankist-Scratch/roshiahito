@@ -7,8 +7,10 @@ struct = ["<!DOCTYPE html><html lang='ru'><head><base href='/roshiahito'>", "\n<
 
 main = """"""
 
-pages = {"VD I" : """{{Card|VD I||||40|40|10|2}}VD I - первый робот ветки внедорожников. Первый раз принял участие в [[Robofinist (2017)|'Ралли по коридору']] в 2017 году.<br>""""",
-         "Robofinist (2017)" : """<a href='//robofinist.ru/event/info/competitions/id/132#kind957'>Ралли по коридору</a>"""}
+pages = {"VD I" : """{{Card|VD I||L|||40|40|10|2}}VD I - первый робот ветки внедорожников. Первый раз принял участие в [[Robofinist (2017)|'Ралли по коридору']] в 2017 году.<br>""""",
+         "Robofinist (2017)" : """<a href='//robofinist.ru/event/info/competitions/id/132#kind957'>Ралли по коридору</a>""",
+         "Tel.Tr." : """{{Card|Tel.Tr.||mB|||40|40|10|2}}Tel.Tr. - самый первый робот собраный на MakeBlock. Хорошо подходит для езды по линии.""",
+         "Tel.S." : """{{Card|Tel.S.||L|||40|40|10|2}}Tel.S. - тележка построеная на базе [[VD I|VD I]]. Унаследовала помещение электроники в трубу, что увеличивает количество мест для крепления."""}
 all = ["VD"]
 
 styles = {""""""}
