@@ -5,14 +5,22 @@ def robolink(link):
 def card(name, img, type, prev, next, width, lenth, height, mass, model=""):
     o = """<table bgcolor='#8cc' width='100""" + "%" + (""""'>
     <tr><td rowspan='2' width='300px'>%s</td><td><table width="100%s"><tr><td><img src='/roshiahito/img/%s/icon.svg'/>%s</td><td style="text-align:right; color:#666;">%s</td></tr></table></td><td rowspan='2'>
-    \t<table width='100""" % (("<img src='/roshiahito/img/%s/%s' width='300px'/>" % (name, img)) if img else "", "%", name, name, {"L":"Lego Mindstorms", "mB":"MakeBlock"}[type])) + "%" + """'><tr><td>%s</td></tr>
+    \t<table width='100""" % (
+    ("<img src='/roshiahito/img/%s/%s' width='300px'/>" % (name, img)) if img else "", "%", name, name,
+    {"L": "Lego Mindstorms", "mB": "MakeBlock"}[type])) + "%" + """'><tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr></table>
-    </tr><tr><td>Ширина : %s см, Длина : %s, см Высота : %s, см Вес : %s кг</td></tr></table>
+    </tr><tr><td>Длина : %s см, Ширина : %s см, Высота : %s см, Вес : %s кг</td></tr></table>
     <br>
     """ % ("{{robolink|" + prev + "}}", name, "{{robolink|" + next + "}}",
            width, lenth, height, mass)
     return o
+
+
+def mod(name, type, img):
+    return """<table width="100%s"><tr><td width="100px">[[@mods/types/%s.png]]</td><td width="100px">[[@mods/%s.png]]</td><td><b>%s</b></td></tr></table>""" % ("%", type, img, name)
+
+
 
 def model(ldd, sf):
     """<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/bd7d5a476c15431fb55bd869a28b0a74/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
@@ -24,13 +32,16 @@ def model(ldd, sf):
 </p>
 </div>"""
 
+
 def tree(name):
     try:
         pass
 
-                        
+
     except KeyError:
         pass
-all = {"robolink": robolink, "Card" : card, "tree" : tree}
 
-conv = {"robolink": True, "Card": True, "tree" : False}
+
+all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod}
+
+conv = {"robolink": True, "Card": True, "tree": False, "mod": True}
