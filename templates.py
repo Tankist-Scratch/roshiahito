@@ -3,23 +3,45 @@ def robolink(link):
 
 
 def card(name, img, type, prev, next, width, lenth, height, mass, model=""):
-    o = """<table bgcolor='#8cc' width='100""" + "%" + (""""'>
-    <tr><td rowspan='2' width='300px'>%s</td><td><table width="100%s"><tr><td><img src='/roshiahito/img/%s/icon.svg'/>%s</td><td style="text-align:right; color:#666;">%s</td></tr></table></td><td rowspan='2'>
+    return """<table bgcolor='#8cc' width='100""" + "%" + (""""'>
+    <tr><td rowspan='2' width='300px'>%s</td><td><table width="100%s"><tr><td><img src='/roshiahito/img/%s/icon.svg'/><b>%s</b></td><td style="text-align:right; color:#666;">%s</td></tr></table></td><td rowspan='2'>
     \t<table width='100""" % (
-    ("<img src='/roshiahito/img/%s/%s' width='300px'/>" % (name, img)) if img else "", "%", name, name,
-    {"L": "Lego Mindstorms", "mB": "MakeBlock"}[type])) + "%" + """'><tr><td>%s</td></tr>
+        ("<img src='/roshiahito/img/%s/%s' width='300px'/>" % (name, img)) if img else "", "%", name, name,
+        {"L": "Lego Mindstorms", "mB": "MakeBlock"}[type])) + "%" + """'><tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr>
     \t<tr><td>%s</td></tr></table>
     </tr><tr><td>Длина : %s см, Ширина : %s см, Высота : %s см, Вес : %s кг</td></tr></table>
     <br>
     """ % ("{{robolink|" + prev + "}}", name, "{{robolink|" + next + "}}",
            width, lenth, height, mass)
-    return o
 
 
 def mod(name, type, img):
-    return """<table width="100%s"><tr><td width="100px">[[@mods/types/%s.png]]</td><td width="100px">[[@mods/%s.png]]</td><td><b>%s</b></td></tr></table>""" % ("%", type, img, name)
+    return """<table width="100%s"><tr><td width="100px">[[@mods/types/%s.png]]</td><td width="100px">[[@mods/%s.png]]</td><td><h3>%s</h3></td></tr></table>""" % (
+        "%", type, img, name)
 
+
+def battle(name, type, link, top, robot):
+    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s/%s]]</h3><br><b>%s</b><br><b>%s место</b></td></tr></table>""" % (
+        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), link, name, type, robot,
+        top)
+
+
+def battleL(name, type, link, top, robot, rl):
+    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s/%s]]</h3><br><b>[[%s|%s]]</b><br><b>%s место</b></td></tr></table>""" % (
+        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), link, name, type, rl,
+        robot, top)
+
+
+def battleS(robot, rl, top, type=None):
+    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s]]</h3><br>%s<b>%s место</b></td></tr></table>""" % (
+        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), rl, robot,
+        (("<b>%s</b><br>" % type) if type else ""), top)
+
+
+def BCard(name, data, site):
+    return """<table bgcolor='#8cc' width='100%s'><tr><td><b>%s</b></td></tr>
+    <tr><td>Дата : %s, <a href='%s'>Ссылка</a></td></tr></table>""" % ("%", name, data, site)
 
 
 def model(ldd, sf):
@@ -42,6 +64,8 @@ def tree(name):
         pass
 
 
-all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod}
+all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "battle": battle, "battleL": battleL,
+       "battleS": battleS, "BCard": BCard}
 
-conv = {"robolink": True, "Card": True, "tree": False, "mod": True}
+conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "battle": True, "battleL": True, "battleS": True,
+        "BCard": True}

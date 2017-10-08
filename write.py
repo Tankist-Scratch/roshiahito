@@ -1,5 +1,6 @@
 import data, templates as templ, os
 
+
 def head():
     return ""
 
@@ -8,7 +9,8 @@ def write(s, page=False, name=""):
     i = 0
     t = ""
     _s = []
-    o = (data.struct[0] + "<meta charset='UTF-8'><title>" + name + " | Roshiahito Ink</title>" + head() + data.struct[1] + data.header + data.struct[2] + name + data.struct[3]) if page else ""
+    o = (data.struct[0] + "<meta charset='UTF-8'><title>" + name + " | Roshiahito Ink</title>" + head() + data.struct[
+        1] + data.header + data.struct[2] + name + data.struct[3]) if page else ""
     while i < len(s):
         # links (<a>), images (<img>)
         if t == "[":
@@ -41,7 +43,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[i]":
             if s[i] == "]":
-                o += "<img src='img/%s'/>" % ( _s[-1])
+                o += "<img src='img/%s'/>" % (_s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -151,6 +153,8 @@ def write(s, page=False, name=""):
                 o += s[i]
                 i += 1
     return o + (data.struct[4] if page else "")
+
+
 # print(write(data.pages["VD I"], True))
 
 page = open("wiki/index.html", "w", encoding="utf-8")
