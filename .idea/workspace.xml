@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e9bcd65-8a89-4c4b-b2f6-290745dcaf24" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wiki/Robofinist (2017)/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local tree.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.py" afterPath="$PROJECT_DIR$/data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates.py" afterPath="$PROJECT_DIR$/templates.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" afterPath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.S/index.html" afterPath="$PROJECT_DIR$/wiki/T.S/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.Tr/index.html" afterPath="$PROJECT_DIR$/wiki/T.Tr/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/VD-U/index.html" afterPath="$PROJECT_DIR$/wiki/VD-U/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/write.py" afterPath="$PROJECT_DIR$/write.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/index.html" afterPath="$PROJECT_DIR$/wiki/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/Собери своего робота 2017/index.html" afterPath="$PROJECT_DIR$/wiki/Собери своего робота 2017/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,17 +21,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="local tree.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local tree.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-148">
+              <caret line="100" column="12" lean-forward="false" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -54,8 +76,18 @@
         <entry file="file://$PROJECT_DIR$/wiki/T.Tr/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding />
+              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding>
+                <marker date="1507558606498" expanded="true" signature="488:512" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="492:507" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="522:1691" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="541:1686" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="577:1066" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="586:981" ph="..." />
+                <marker date="1507558606498" expanded="false" signature="723:752" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="801:976" ph="..." />
+                <marker date="1507558606498" expanded="true" signature="827:971" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,9 +157,10 @@
         <option value="$PROJECT_DIR$/Дерево развития.html" />
         <option value="$PROJECT_DIR$/../school/school/ex/index.html" />
         <option value="$PROJECT_DIR$/tree/index.html" />
-        <option value="$PROJECT_DIR$/data.py" />
         <option value="$PROJECT_DIR$/write.py" />
         <option value="$PROJECT_DIR$/templates.py" />
+        <option value="$PROJECT_DIR$/local tree.html" />
+        <option value="$PROJECT_DIR$/data.py" />
       </list>
     </option>
   </component>
@@ -159,22 +192,6 @@
             <path>
               <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
               <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
-              <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
-              <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
-              <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="VD-U" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
@@ -481,8 +498,18 @@
     <entry file="file://$PROJECT_DIR$/wiki/T.Tr/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <marker date="1507558606498" expanded="true" signature="488:512" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="492:507" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="522:1691" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="541:1686" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="577:1066" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="586:981" ph="..." />
+            <marker date="1507558606498" expanded="false" signature="723:752" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="801:976" ph="..." />
+            <marker date="1507558606498" expanded="true" signature="827:971" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -502,14 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/write.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -522,6 +541,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local tree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="100" column="12" lean-forward="false" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
           <folding />
         </state>
       </provider>
