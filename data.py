@@ -2,7 +2,7 @@ header = """<img src='/roshiahito/logo.png' width='200px'><br>
  • <a href='/roshiahito/wiki/'>Главная</a><br>
  • <a href='/roshiahito/tree/'>Все создания</a><br>
 <hr>
- • Short link<a href='https://goo.gl/g5SiYW'>goo.gl/g5SiYW</a>"""
+ • Short link <a href='https://goo.gl/g5SiYW'>goo.gl/g5SiYW</a>"""
 
 struct = ["<!DOCTYPE html><html lang='ru'><head>",
           "\n</head><body bgcolor='#dfe'>\n<table width='100%' bgcolor='#dfe'><tr><td width='200px' rowspan='2' style='background-color:#fff'>\n",
