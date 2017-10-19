@@ -4,7 +4,7 @@ header = """<img src='/roshiahito/logo.png' class='menu-logo'><br>
 <hr>
  • Short link <a href='https://goo.gl/g5SiYW'>goo.gl/g5SiYW</a>"""
 
-struct = ["<!DOCTYPE html><html lang='ru'><head><link href='/roshiahito/styles/menu.css' rel='stylesheet'><link href='/roshiahito/styles/body.css' rel='stylesheet'><link href='/roshiahito/styles/title.css' rel='stylesheet'>",
+struct = ["<!DOCTYPE html><html lang='ru'><head><link href='/roshiahito/styles/common.css' rel='stylesheet'><link href='/roshiahito/styles/menu.css' rel='stylesheet'><link href='/roshiahito/styles/body.css' rel='stylesheet'><link href='/roshiahito/styles/title.css' rel='stylesheet'>",
           "\n</head><body bgcolor='#dfe'>\n<table width='100%' bgcolor='#dfe'><tr><td class='menu' rowspan='3'>\n",
           "\n<td rowspan='3'></td></td><td class='title'>\n", "\n</h1></td></tr>\n<tr><td height='25px'></td></tr><tr><td rowspan='2' class='body'>",
           "</td></tr><tr><td></td></tr></table>\n</body></html>"]

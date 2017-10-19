@@ -69,3 +69,5 @@ all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "battle": b
 
 conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "battle": True, "battleL": True, "battleS": True,
         "BCard": True}
+
+css = {}
