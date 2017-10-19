@@ -1,12 +1,12 @@
-header = """<img src='/roshiahito/logo.png' width='200px'><br>
+header = """<img src='/roshiahito/logo.png' class='menu-logo'><br>
  • <a href='/roshiahito/wiki/'>Главная</a><br>
  • <a href='/roshiahito/tree/'>Все создания</a><br>
 <hr>
  • Short link <a href='https://goo.gl/g5SiYW'>goo.gl/g5SiYW</a>"""
 
-struct = ["<!DOCTYPE html><html lang='ru'><head><link href='/roshiahito/styles/menu.css' rel='stylesheet'>",
+struct = ["<!DOCTYPE html><html lang='ru'><head><link href='/roshiahito/styles/menu.css' rel='stylesheet'><link href='/roshiahito/styles/title.css' rel='stylesheet'>",
           "\n</head><body bgcolor='#dfe'>\n<table width='100%' bgcolor='#dfe'><tr><td class='menu' rowspan='2'>\n",
-          "\n<td rowspan='3'></td></td><td abgcolor='#fff'><h1>\n", "\n<br></h1></td></tr>\n<tr><td rowspan='2' bgcolor='#fff'>",
+          "\n<td rowspan='3'></td></td><td class='title'>\n", "\n</h1></td></tr>\n<tr><td rowspan='2' bgcolor='#fff'>",
           "</td></tr><tr><td></td></tr></table>\n</body></html>"]
 
 main = """"""

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e9bcd65-8a89-4c4b-b2f6-290745dcaf24" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/title.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.py" afterPath="$PROJECT_DIR$/data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/menu.css" afterPath="$PROJECT_DIR$/styles/menu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/RW-U/index.html" afterPath="$PROJECT_DIR$/wiki/RW-U/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" afterPath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.S/index.html" afterPath="$PROJECT_DIR$/wiki/T.S/index.html" />
@@ -32,8 +35,18 @@
       <file leaf-file-name="data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="94" lean-forward="false" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+            <state relative-caret-position="136">
+              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="title.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/title.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -45,15 +58,18 @@
             <state relative-caret-position="136">
               <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding>
-                <marker date="1508419762587" expanded="true" signature="491:545" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="491:1757" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="491:1765" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="550:1731" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="581:1726" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="617:1106" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="626:1021" ph="..." />
-                <marker date="1508419762587" expanded="false" signature="763:792" ph="..." />
-                <marker date="1508419762587" expanded="true" signature="867:1011" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="584:598" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="584:1810" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="584:1818" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="584:593" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="584:588" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="603:1784" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="634:1779" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="670:1159" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="679:1074" ph="..." />
+                <marker date="1508420562851" expanded="false" signature="816:845" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="894:1069" ph="..." />
+                <marker date="1508420562851" expanded="true" signature="920:1064" ph="..." />
               </folding>
             </state>
           </provider>
@@ -62,8 +78,8 @@
       <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -163,6 +179,7 @@
         <option value="$PROJECT_DIR$/tree/index.html" />
         <option value="$PROJECT_DIR$/wiki/T.Tr/index.html" />
         <option value="$PROJECT_DIR$/styles/menu.css" />
+        <option value="$PROJECT_DIR$/styles/title.css" />
         <option value="$PROJECT_DIR$/data.py" />
       </list>
     </option>
@@ -194,6 +211,11 @@
             <path>
               <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
               <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
+              <item name="-roshiahito" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="-roshiahito" type="b2602c69:ProjectViewProjectNode" />
@@ -607,6 +629,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wiki/T.Tr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <marker date="1508420562851" expanded="true" signature="584:598" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="584:1810" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="584:1818" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="584:593" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="584:588" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="603:1784" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="634:1779" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="670:1159" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="679:1074" ph="..." />
+            <marker date="1508420562851" expanded="false" signature="816:845" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="894:1069" ph="..." />
+            <marker date="1508420562851" expanded="true" signature="920:1064" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/write.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -617,34 +660,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki/T.Tr/index.html">
+    <entry file="file://$PROJECT_DIR$/styles/title.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <marker date="1508419762587" expanded="true" signature="491:545" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="491:1757" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="491:1765" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="550:1731" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="581:1726" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="617:1106" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="626:1021" ph="..." />
-            <marker date="1508419762587" expanded="false" signature="763:792" ph="..." />
-            <marker date="1508419762587" expanded="true" signature="867:1011" ph="..." />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="94" lean-forward="false" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+        <state relative-caret-position="136">
+          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding />
         </state>
       </provider>
