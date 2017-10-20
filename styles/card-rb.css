@@ -1,0 +1,43 @@
+table.card-rb {
+    background-color: #8cc;
+    border: 4px ridge #6aa;
+    width: 100%;
+}
+
+td.card-rb-tree {
+    border: 4px ridge #6aa;
+    width: 250px;
+}
+
+td.card-rb-img {
+    border: 3px double #599;
+    width: 202px;
+    padding: 1px;
+}
+
+img.card-rb-img {
+    width: 200px;
+}
+
+td.card-rb-title {
+    border-bottom: 4px ridge #6aa;
+}
+
+td.card-rb-tree-cur {
+    border-bottom: 4px double #599;
+    border-top: 4px double #599;
+}
+
+table.card-rb-tree {
+    width: 100%;
+    text-align: center;
+}
+
+td.card-rb-type {
+    text-align: right;
+    color: #666;
+}
+
+table.card-rb-title {
+    width: 100%;
+}

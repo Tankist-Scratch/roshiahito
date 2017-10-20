@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/-roshiahito.iml" filepath="$PROJECT_DIR$/.idea/-roshiahito.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../quests/Quests/.idea/Quests.iml" filepath="$PROJECT_DIR$/../quests/Quests/.idea/Quests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../school/.idea/school.iml" filepath="$PROJECT_DIR$/../school/.idea/school.iml" />
+      <module fileurl="file://C:/quests/Quests/.idea/Quests.iml" filepath="C:/quests/Quests/.idea/Quests.iml" />
+      <module fileurl="file://C:/Python projects/inf/.idea/inf.iml" filepath="C:/Python projects/inf/.idea/inf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/roshiahito.iml" filepath="$PROJECT_DIR$/.idea/roshiahito.iml" />
+      <module fileurl="file://C:/school/.idea/school.iml" filepath="C:/school/.idea/school.iml" />
     </modules>
   </component>
 </project>

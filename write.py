@@ -80,7 +80,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[t]":
             if s[i] == "]":
-                o += "<a href='/roshiahito/wiki/%s' title='%s'>%s</a>" % (_s[-2], _s[-2], _s[-1])
+                o += "<a href='%s' title='%s'>%s</a>" % (_s[-2] if _s[-2][0] == "#" else ("/roshiahito/wiki/" + _s[-2]), _s[-2], _s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -95,7 +95,7 @@ def write(s, page=False, name=""):
             if s[i] == "{":
                 t = "{t"
                 i += 1
-                _s.append([""])
+                _s.append("")
             else:
                 o += "{" + s[i]
                 t = ""
@@ -108,31 +108,37 @@ def write(s, page=False, name=""):
             elif s[i] == "|":
                 t = "{|"
                 i += 1
+            elif s[i] == "{":
+                t = "{t{"
+                i += 1
             else:
-                _s[-1][-1] += s[i]
+                _s[-1] += s[i]
                 i += 1
             continue
         elif t == "{|":
             if s[i] == "}":
                 t = "{t}"
                 i += 1
-                _s[-1].append("")
+                _s.append("")
+            elif s[i] == "|":
+                t = "{|"
+                i += 1
+                _s.append("")
+            elif s[i] == "{":
+                t = "{t{"
+                i += 1
             else:
-                if s[i] == "|":
-                    t = "{|"
-                    i += 1
-                    _s[-1].append("")
-                else:
-                    _s[-1].append(s[i])
-                    t = "{t"
-                    i += 1
+                _s.append(s[i])
+                t = "{t"
+                i += 1
             continue
         elif t == "{t}":
             if s[i] == "}":
                 t = ""
                 i += 1
-                o += write(templ.all[_s[-1][0]](*_s[-1][1:])) if templ.conv else templ.all[_s[-1][0]](*_s[-1][1:])
-                _s.pop()
+                print(_s)
+                o += write(templ.all[_s[0]](*_s[1:])) if templ.conv else templ.all[_s[0]](*_s[1:])
+                _s = []
             else:
                 if s[i] == "|":
                     t = "{|"
@@ -142,6 +148,18 @@ def write(s, page=False, name=""):
                     t = "{t"
                     _s[-1][-1] += "}" + s[i]
                     i += 1
+        elif t == "{t{":
+            if s[i] == "{":
+                st = "{"
+                while s[i-2:i] != "}}":
+                    st += s[i]
+                    i += 1
+                _s.append(write(st))
+            else:
+                o += "{" + s[i]
+                i += 1
+            t = "{t"
+
         else:
             if s[i] == "[":
                 t = "["
