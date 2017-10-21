@@ -1,8 +1,9 @@
-def robolink(name, link, icon):
-    return "[[@robots/%s/logo.svg]][[%s|%s]]" % (icon, link, name)
+def robolink(name, link, icon=False):
+    import data
+    return "[[@icons/%s]][[%s|%s]]" % (icon if icon else data.icons[name], link, name)
 
 
-def card(name, img, type, icon, prev, next, lenth, width, height, mass):
+def card(name, img, type, icon, prev, next, lenth="", width="", height="", mass="", motor="", speed="", rotate=""):
     return """
     <table class='card-rb'>
         <tr>
@@ -32,21 +33,56 @@ def card(name, img, type, icon, prev, next, lenth, width, height, mass):
             </td>
         </tr>
         <tr>
-            <td>Длина : %s см, Ширина : %s см, Высота : %s см, Вес : %s кг.</td>
+            <td>
+                <table class='card-rb-data'>
+                    <tr>
+                        <td class='card-rb-data-metric'>Длина : %s см, Ширина : %s см, Высота : %s см, Вес : %s кг.</td>
+                    </tr>
+                    <tr>
+                        <td>Привод : %s, Скорость : %s м/с, Поворот : %s °/с.</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
     </table>
-    <br>
-    """ % (img, icon, name, {"L": "Lego Mindstorms", "mB": "MakeBlock"}[type], prev, icon, name, next, lenth, width, height, mass)
+    """ % (img, icon, name, {"L": "Lego Mindstorms", "mB": "MakeBlock"}[type], prev, icon, name, next, lenth, width, height, mass, {"f": "Передний", "b": "Задний", "d": "Полный", "": ""}[motor], speed, rotate)
 
 def mod(name, type, img):
-    return """<table width="100%s"><tr><td width="100px">[[@mods/types/%s.png]]</td><td width="100px">[[@mods/%s.png]]</td><td><h3>%s</h3></td></tr></table>""" % (
+    return """
+    <table width="100%s">
+        <tr>
+            <td width="100px">
+                [[@mods/types/%s.png]]
+            </td>
+            <td width="100px">
+                [[@mods/%s.png]]
+            </td>
+            <td>
+                <h3>%s</h3>
+            </td>
+        </tr>
+    </table>""" % (
         "%", type, img, name)
 
 
-def battle(name, type, link, top, robot):
-    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s/%s]]</h3><br><b>%s</b><br><b>%s место</b></td></tr></table>""" % (
-        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), link, name, type, robot,
-        top)
+def comp(name, type, link, robot, top):
+    m = top if top in {"1", "2", "3"} else "d"
+    return """
+    <table class='comp c-m%s'>
+        <tr>
+            <td colspan='2' class='comp-title comp-m%s-title'>
+                <b>[[%s|%s/%s]]</b>
+            </td>
+        </tr>
+        <tr>
+            <td class='comp-data'>
+                %s
+            </td>
+            <td class='comp-data'>
+                %s место
+            </td>
+        </tr>
+    </table>""" % (m, m, link, name, type, robot, top)
 
 
 def battleL(name, type, link, top, robot, rl):
@@ -93,10 +129,10 @@ def tree(name):
 def h2(name, id=False):
     return "<h2 class='title-h2' id='%s'>%s</h2>" % (id if id else name, name)
 
-all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "battle": battle, "battleL": battleL,
+all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "comp": comp, "battleL": battleL,
        "battleS": battleS, "BCard": BCard, "id": id, "h2": h2}
 
-conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "battle": True, "battleL": True, "battleS": True,
+conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "comp": True, "battleL": True, "battleS": True,
         "BCard": True, "id": False, "h2": False}
 
 css = {}

@@ -1,0 +1,47 @@
+table.comp {
+    width: 100%;
+}
+
+table.c-m1 {
+    border: 3px double #fa0;
+    background-color: #ffa;
+}
+
+table.c-m2 {
+    border: 3px double #7b4cff;
+    background-color: #ccf;
+}
+
+table.c-m3 {
+    border: 3px double #e6672b;
+    background-color: #eca;
+}
+
+table.c-md {
+    border: 3px double #aaa;
+    background-color: #eee;
+}
+
+td.comp-title {
+    text-align: center;
+}
+
+td.comp-m1-title {
+    border-bottom: 4px ridge #fa0;
+}
+
+td.comp-m2-title {
+    border-bottom: 4px ridge #7b4cff;
+}
+
+td.comp-m3-title {
+    border-bottom: 4px ridge #e6672b;
+}
+
+td.comp-md-title {
+    border-bottom: 4px ridge #aaa;
+}
+
+td.comp-data {
+    width: 50%;
+}

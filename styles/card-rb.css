@@ -41,3 +41,11 @@ td.card-rb-type {
 table.card-rb-title {
     width: 100%;
 }
+
+table.card-rb-data {
+    width: 100%;
+}
+
+td.card-rb-data-metric {
+    border-bottom: 2px dotted #599;
+}

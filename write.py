@@ -43,7 +43,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[i]":
             if s[i] == "]":
-                o += "<img src='img/%s'/>" % (_s[-1])
+                o += "<img src='/roshiahito/img/%s'/>" % (_s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -125,6 +125,7 @@ def write(s, page=False, name=""):
                 i += 1
                 _s.append("")
             elif s[i] == "{":
+                _s.append("")
                 t = "{t{"
                 i += 1
             else:
@@ -154,7 +155,7 @@ def write(s, page=False, name=""):
                 while s[i-2:i] != "}}":
                     st += s[i]
                     i += 1
-                _s.append(write(st))
+                _s[-1] += write(st)
             else:
                 o += "{" + s[i]
                 i += 1
