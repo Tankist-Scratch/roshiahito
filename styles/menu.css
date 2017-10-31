@@ -1,7 +1,12 @@
 td.menu {
-    background-color: #fff;
     vertical-align: top;
     width: 200px;
+}
+
+div.menu {
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
 }
 
 img.menu-logo {

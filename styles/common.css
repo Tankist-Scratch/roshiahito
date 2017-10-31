@@ -2,3 +2,12 @@
     font-family: monospace;
     font-size: 15px;
 }
+
+a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+a:visited {
+    color: #008;
+}

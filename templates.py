@@ -1,6 +1,6 @@
-def robolink(name, link, icon=False):
+def robolink(name, link=False, icon=False):
     import data
-    return "[[@icons/%s]][[%s|%s]]" % (icon if icon else data.icons[name], link, name)
+    return "[[@icons/%s]][[%s|%s]]" % (icon if icon else data.icons[name], link if link else name, name)
 
 
 def card(name, img, type, icon, prev, next, lenth="", width="", height="", mass="", motor="", speed="", rotate=""):
@@ -65,7 +65,7 @@ def mod(name, type, img):
         "%", type, img, name)
 
 
-def comp(name, type, link, robot, top):
+def comp(name, type, link, robot, top, desc=""):
     m = top if top in {"1", "2", "3"} else "d"
     return """
     <table class='comp c-m%s'>
@@ -82,19 +82,32 @@ def comp(name, type, link, robot, top):
                 %s место
             </td>
         </tr>
-    </table>""" % (m, m, link, name, type, robot, top)
+        <tr>
+            <td class='comp-m%s-desc' colspan='2'>
+                %s
+            </td>
+        </tr>
+    </table>""" % (m, m, link, name, type, robot, top, m, desc)
 
 
-def battleL(name, type, link, top, robot, rl):
-    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s/%s]]</h3><br><b>[[%s|%s]]</b><br><b>%s место</b></td></tr></table>""" % (
-        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), link, name, type, rl,
-        robot, top)
-
-
-def battleS(robot, rl, top, type=None):
-    return """<table width="100%s" bgcolor="#%s"><tr><td><h3>[[%s|%s]]</h3><br>%s<b>%s место</b></td></tr></table>""" % (
-        "%", ({"1": "ffa", "2": "ccf", "3": "eca"}[top] if top in {"1", "2", "3"} else "eee"), rl, robot,
-        (("<b>%s</b><br>" % type) if type else ""), top)
+def comp_u(robot, top, desc=""):
+    m = top if top in {"1", "2", "3"} else "d"
+    return """
+    <table class='comp c-m%s'>
+        <tr>
+            <td class='comp-data'>
+                %s
+            </td>
+            <td class='comp-data'>
+                %s место
+            </td>
+        </tr>
+        <tr>
+            <td class='comp-m%s-desc' colspan="2">
+                %s
+            </td>
+        </tr>
+    </table>""" % (m, robot, top, m, desc)
 
 
 def BCard(name, data, site):
@@ -129,10 +142,12 @@ def tree(name):
 def h2(name, id=False):
     return "<h2 class='title-h2' id='%s'>%s</h2>" % (id if id else name, name)
 
-all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "comp": comp, "battleL": battleL,
-       "battleS": battleS, "BCard": BCard, "id": id, "h2": h2}
+def h3(name, id=False):
+    return "<h3 class='title-h3' id='%s'>%s</h3>" % (id if id else name, name)
 
-conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "comp": True, "battleL": True, "battleS": True,
-        "BCard": True, "id": False, "h2": False}
+all = {"robolink": robolink, "Card": card, "tree": tree, "mod": mod, "comp": comp, "BCard": BCard, "id": id, "h2": h2, "h3": h3, "comp_u" : comp_u}
+
+conv = {"robolink": True, "Card": True, "tree": False, "mod": True, "comp": True,
+        "BCard": True, "id": False, "h2": False, "h3": False, "comp_u":True}
 
 css = {}

@@ -45,3 +45,19 @@ td.comp-md-title {
 td.comp-data {
     width: 50%;
 }
+
+td.comp-m1-desc {
+    border-top: 4px ridge #fa0;
+}
+
+td.comp-m2-desc {
+    border-top: 4px ridge #7b4cff;
+}
+
+td.comp-m3-desc {
+    border-top: 4px ridge #e6672b;
+}
+
+td.comp-md-desc {
+    border-top: 4px ridge #aaa;
+}
