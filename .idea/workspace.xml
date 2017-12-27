@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4231cdd1-137a-4b13-8fb2-549779d001f5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/roshiahito.iml" afterPath="$PROJECT_DIR$/.idea/rht.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.py" afterPath="$PROJECT_DIR$/data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/RW-U-a.svg" afterPath="$PROJECT_DIR$/img/icons/RW-U-a.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/RW-U-b.svg" afterPath="$PROJECT_DIR$/img/icons/RW-U-b.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/RW-U-c.svg" afterPath="$PROJECT_DIR$/img/icons/RW-U-c.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/RW-U.svg" afterPath="$PROJECT_DIR$/img/icons/RW-U.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/T.S Line.svg" afterPath="$PROJECT_DIR$/img/icons/T.S Line.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/T.S.svg" afterPath="$PROJECT_DIR$/img/icons/T.S.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/T.Tr Line.svg" afterPath="$PROJECT_DIR$/img/icons/T.Tr Line.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/T.Tr.svg" afterPath="$PROJECT_DIR$/img/icons/T.Tr.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/mods/sys/mB-Line.svg" afterPath="$PROJECT_DIR$/img/mods/sys/mB-Line.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/common.css" afterPath="$PROJECT_DIR$/styles/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates.py" afterPath="$PROJECT_DIR$/templates.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tree/index.html" afterPath="$PROJECT_DIR$/tree/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/IKAR-1718-L/index.html" afterPath="$PROJECT_DIR$/wiki/IKAR-1718-L/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/L-U/index.html" afterPath="$PROJECT_DIR$/wiki/L-U/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/RW-B/index.html" afterPath="$PROJECT_DIR$/wiki/RW-B/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/RW-U/index.html" afterPath="$PROJECT_DIR$/wiki/RW-U/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" afterPath="$PROJECT_DIR$/wiki/Robofinist 2017/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.S Line/index.html" afterPath="$PROJECT_DIR$/wiki/T.S Line/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.S/index.html" afterPath="$PROJECT_DIR$/wiki/T.S/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.Tr Line/index.html" afterPath="$PROJECT_DIR$/wiki/T.Tr Line/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/T.Tr/index.html" afterPath="$PROJECT_DIR$/wiki/T.Tr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/index.html" afterPath="$PROJECT_DIR$/wiki/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/ИКАР 2018/index.html" afterPath="$PROJECT_DIR$/wiki/ИКАР 2018/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki/Собери своего робота 2017/index.html" afterPath="$PROJECT_DIR$/wiki/Собери своего робота 2017/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/write.py" afterPath="$PROJECT_DIR$/write.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
