@@ -9,7 +9,7 @@ def write(s, page=False, name=""):
     i = 0
     t = ""
     _s = []
-    o = (data.struct[0] + "<meta charset='UTF-8'><title>" + name + " | Roshiahito Ink</title>" + head() + data.struct[
+    o = (data.struct[0] + "<meta charset='UTF-8'><title>" + name + " | Rht Ink</title>" + head() + data.struct[
         1] + data.header + data.struct[2] + name + data.struct[3]) if page else ""
     while i < len(s):
         # links (<a>), images (<img>)
@@ -43,7 +43,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[i]":
             if s[i] == "]":
-                o += "<img src='/roshiahito/img/%s'/>" % (_s[-1])
+                o += "<img src='/rht/img/%s'/>" % (_s[-1])
                 t = ""
                 i += 1
                 _s.pop()
@@ -80,7 +80,7 @@ def write(s, page=False, name=""):
             continue
         elif t == "[t]":
             if s[i] == "]":
-                o += "<a href='%s' title='%s'>%s</a>" % (_s[-2] if _s[-2][0] == "#" else ("/roshiahito/wiki/" + _s[-2]), _s[-2], _s[-1])
+                o += "<a href='%s' title='%s'>%s</a>" % (_s[-2] if _s[-2][0] == "#" else ("/rht/wiki/" + _s[-2]), _s[-2], _s[-1])
                 t = ""
                 i += 1
                 _s.pop()

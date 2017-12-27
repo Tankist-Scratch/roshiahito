@@ -1,20 +1,20 @@
-header = """<img src='/roshiahito/logo.png' class='menu-logo'><br>
- • <a href='/roshiahito/wiki/'>Главная</a><br>
- • <a href='/roshiahito/tree/'>Все создания</a><br>
+header = """<img src='/rht/logo.png' class='menu-logo'><br>
+ • <a href='/rht/wiki/'>Главная</a><br>
+ • <a href='/rht/tree/'>Все создания</a><br>
 <hr>
- • Short link <a href='https://goo.gl/g5SiYW'>goo.gl/g5SiYW</a>"""
+ • Short link: <a href='https://goo.gl/m1oTU6'>goo.gl/m1oTU6</a>"""
 
 struct = [
     """
 <!DOCTYPE html>
 <html lang='ru'>
     <head>
-        <link href='/roshiahito/styles/common.css' rel='stylesheet'>
-        <link href='/roshiahito/styles/menu.css' rel='stylesheet'>
-        <link href='/roshiahito/styles/body.css' rel='stylesheet'>
-        <link href='/roshiahito/styles/title.css' rel='stylesheet'>
-        <link href='/roshiahito/styles/card-rb.css' rel='stylesheet'>
-        <link href='/roshiahito/styles/comp.css' rel='stylesheet'>""",
+        <link href='/rht/styles/common.css' rel='stylesheet'>
+        <link href='/rht/styles/menu.css' rel='stylesheet'>
+        <link href='/rht/styles/body.css' rel='stylesheet'>
+        <link href='/rht/styles/title.css' rel='stylesheet'>
+        <link href='/rht/styles/card-rb.css' rel='stylesheet'>
+        <link href='/rht/styles/comp.css' rel='stylesheet'>""",
     """
     </head>
     <body bgcolor='#dfe'>
@@ -70,18 +70,27 @@ pages = {
     ###
     "L-U": """{{Card|T.S Line||L|T.S Line.svg|{{robolink|T.S Line}} • {{robolink|IKAR-1718-L}}||||||b||}}""",
     ###
-    "T.Tr": """{{Card|T.Tr||mB|T.Tr.svg|||20|20|10||b||}}T.Tr - самый первый робот собраный на MakeBlock. Хорошо подходит для езды по линии.<br>
+    "T.Tr": """{{Card|T.Tr||mB|T.Tr.svg|||20|20|10||b||}}<br>
+     
+     {{h2|T.Tr bis|T.Tr bis}}
+     T.Tr bis - усовершенствованая модель. Блок управления поставлен сзади над моторами, что дало дополнительное место для установки модулей.
      
      {{h2|Модели на этой базе|models}}
+     {{h3|{{robolink|T.Tr|#}}|models T.Tr}}
+      • {{robolink|T.Tr Line}}
+     {{h3|{{robolink|T.Tr bis|#T.Tr bis}}|models T.Tr bis}}
+      • {{robolink|T.Tr IKAR-1718-H}}<br/>
       • {{robolink|T.Tr Line}}
      
      {{h2|Соревнования|comp}}
      {{comp|Собери своего робота 2017|Полигон|Собери своего робота 2017|{{robolink|T.Tr Line}}|1}}""",
     ###
-    "T.Tr Line": """{{Card|T.Tr Line||mB|T.Tr Line.svg|||20|20|10||b||}}
+    "T.Tr Line": """{{Card|T.Tr Line||mB|T.Tr Line.svg|{{robolink|T.Tr}}||20|20|10||b||}}
 
      {{h2|Соревнования|comp}}
      {{comp|Собери своего робота 2017|Полигон|Собери своего робота 2017|T.Tr Line|1}}""",
+    ###
+    "T.Tr IKAR-1718-H": """{{Card|T.Tr IKAR-1718-H||mB|T.Tr IKAR-1718-H.svg|{{robolink|T.Tr|T.Tr#T.Tr bis}}||20|20|10||b||}}""",
     ###
     "Собери своего робота 2017": """{{BCard|Собери своего робота|08/10/2017|http://belsmus.ru/tenders/Konkurs-%22Soberi-svoego-robota-2017%22}}
     {{comp_u|{{robolink|T.Tr Line}}|1}}""",
@@ -91,7 +100,9 @@ pages = {
      {{h2|Соревнования|comp}}
      {{comp|Robofinist 2017|Ралли по коридору|Robofinist 2017|RW-U-c|9}}""",
     ###
-    "ИКАР 2018": """{{BCard|ИКАР||http://xn--80apgz.xn--c1awjj.xn--p1ai/ikar-profi}}"""}
+    "ИКАР 2018": """{{BCard|ИКАР||http://xn--80apgz.xn--c1awjj.xn--p1ai/ikar-profi}}""",
+    ###
+    "": ""}
 
 icons = {"RW-U": "RW-U.svg",
          "RW-U-a": "RW-U-a.svg",
@@ -103,6 +114,8 @@ icons = {"RW-U": "RW-U.svg",
          "T.Tr": "T.Tr.svg",
          "T.Tr Line": "T.Tr Line.svg",
          "IKAR-1718-L": "IKAR-1718-L.svg",
-         "L-U": "L-U.svg"}
+         "L-U": "L-U.svg",
+         "T.Tr bis": "T.Tr bis.svg",
+         "T.Tr IKAR-1718-H": "T.Tr IKAR-1718-H.svg"}
 
 styles = {""""""}

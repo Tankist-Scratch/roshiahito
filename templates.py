@@ -1,6 +1,20 @@
 def robolink(name, link=False, icon=False):
     import data
-    return "[[@icons/%s]][[%s|%s]]" % (icon if icon else data.icons[name], link if link else name, name)
+    return """
+    <span class='hw'>
+        [[@icons/%s]][[%s|%s]]
+    <span class='hw_s'>
+        <div class="hw">
+        <table class='r-link'>
+            <tr>
+                <td colspan='2'>
+                    dsfghj
+                </td>
+            </tr>
+        </table>
+    </div>
+    </span>
+    </span>""" % (icon if icon else data.icons[name], link if link else name, name)
 
 
 def card(name, img, type, icon, prev, next, lenth="", width="", height="", mass="", motor="", speed="", rotate=""):
@@ -8,12 +22,12 @@ def card(name, img, type, icon, prev, next, lenth="", width="", height="", mass=
     <table class='card-rb'>
         <tr>
             <td rowspan='2' class='card-rb-img'>
-                <img src='/roshiahito/img/%s' class='card-rb-img'/>
+                <img src='/rht/img/%s' class='card-rb-img'/>
             </td>
             <td class='card-rb-title'>
                 <table  class='card-rb-title'>
                     <tr>
-                        <td><img src='/roshiahito/img/icons/%s'/><b>%s</b></td>
+                        <td><img src='/rht/img/icons/%s'/><b>%s</b></td>
                         <td class='card-rb-type'>%s</td>
                     </tr>
                 </table>
@@ -24,7 +38,7 @@ def card(name, img, type, icon, prev, next, lenth="", width="", height="", mass=
                         <td>%s</td>
                     </tr>
                     <tr>
-                        <td  class='card-rb-tree-cur'><img src='/roshiahito/img/icons/%s'/><b>%s</b></td>
+                            <td  class='card-rb-tree-cur'><img src='/rht/img/icons/%s'/><b>%s</b></td>
                     </tr>
                     <tr>
                         <td>%s</td>
